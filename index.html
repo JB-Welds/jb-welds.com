@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to JB-Welds.com">
     <title>JB-Welds</title>
-    
-    <!-- Internal CSS -->
+
     <style>
         /* General reset and box model */
         * {
@@ -14,7 +13,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         /* Body styling */
         body {
             font-family: 'Arial', sans-serif;
@@ -25,7 +24,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         /* Header and Logo */
         header {
             display: flex;
@@ -39,13 +38,13 @@
             transition: background-color 0.3s ease-in-out;
         }
 
-        header .logo img {
+        header logo.png img {
             height: 100px;
             width: auto;
             transition: transform 0.3s ease-in-out;
         }
 
-        header .logo img:hover {
+        header logo.png img:hover {
             transform: scale(1.1);
         }
 
@@ -70,6 +69,31 @@
 
         header nav ul li a:hover {
             color: #f4b400;
+        }
+
+        /* Link with Jellyfin Logo Background */
+        .jellyfin-link {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #222;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            text-align: center;
+            background-image: url('jellyfin-logo.png'); /* Path to your Jellyfin logo */
+            background-size: 20px 20px; /* Resize the logo */
+            background-repeat: no-repeat;
+            background-position: left center; /* Position logo to the left */
+            padding-left: 40px; /* Add padding for the logo to sit properly */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .jellyfin-link:hover {
+            background-color: #f4b400; /* Highlight color on hover */
+            color: #222; /* Change text color on hover */
         }
 
         /* Hero Section */
@@ -158,17 +182,6 @@
 </head>
 <body>
 
-    <<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to JB-Welds.com">
-    <title>JB-Welds</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
     <!-- Navigation Bar -->
     <header>
         <div class="logo">
@@ -176,32 +189,33 @@
         </div>
         <nav>
             <ul>
-                <li><a href="https://media.jb-welds.com" target="_blank">JB-Fin (Media Server)</a></li>
+                <li>
+                    <a href="https://media.jb-welds.com" target="_blank" class="jellyfin-link">
+                        JB-Fin (Media Server)
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <section class="intro">
+        <section class="hero">
             <h1>Welcome to JB-Welds</h1>
             <p>Your one-stop solution for everything JB-Weld related. Explore our services, products, and media content.</p>
+            <a href="https://media.jb-welds.com" class="cta-button" target="_blank">Explore JB-Fin</a>
         </section>
 
         <section class="about">
             <h2>About JB-Welds</h2>
-            <p>At JB-Welds, we provide high-quality welding and industrial products. Our mission is to deliver top-notch solutions for your welding needs.</p>
+            <p>At JB-Welds, we provide high-quality welding and industrial products. Our mission is to deliver top-notch solutions for your welding needs. Explore our products and services below.</p>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 JB-Welds. All rights reserved.</p>
+        <p>&copy; 2024 JB-Welds. All rights reserved. | <a href="https://media.jb-welds.com" target="_blank">Visit JB-Fin</a></p>
     </footer>
-
-</body>
-</html>
->
 
 </body>
 </html>
